@@ -153,3 +153,6 @@ map <C-p> :Rg<CR>
 
 " change leader
 map <Space> <Leader>
+
+" Remap control+c per guidance online
+map <C-c> <Esc>
