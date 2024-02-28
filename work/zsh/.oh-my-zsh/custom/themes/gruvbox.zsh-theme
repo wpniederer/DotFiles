@@ -92,7 +92,7 @@ prompt_context() {
     # prompt_segment 237 7 "%(!.%{%F{3}%}.)%n@%m"
   # fi
   case "$OSTYPE" in
-    darwin*)  OS_LOGO="\ue29e" ;; 
+    darwin*)  OS_LOGO="Walt@Work" ;;
     linux*)   OS_LOGO="\ue712" ;;
   esac
   prompt_segment 237 7 $OS_LOGO
@@ -222,9 +222,9 @@ prompt_virtualenv() {
 prompt_status() {
   local -a symbols
 
-  [[ $RETVAL -ne 0 ]] && symbols+="%{%F{1}%}\uf7d3" #✘
-  [[ $UID -eq 0 ]] && symbols+="%{%F{3}%}\ufaf5" #⚡
-  [[ $(jobs -l | wc -l) -gt 0 ]] && symbols+="%{%F{6}%}\uf7d0" #⚙
+  [[ $RETVAL -ne 0 ]] && symbols+="%{%F{1}%}✘" #✘
+  [[ $UID -eq 0 ]] && symbols+="%{%F{3}%}⚡" #⚡
+  [[ $(jobs -l | wc -l) -gt 0 ]] && symbols+="%{%F{6}%}⚙" #⚙
 
   [[ -n "$symbols" ]] && prompt_segment 166 7 "$symbols"
 }
