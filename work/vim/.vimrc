@@ -158,3 +158,7 @@ map <Space> <Leader>
 
 " Remap control+c per guidance online
 map <C-c> <Esc>
+
+" Toggle Markdown preview
+nmap <C-m> <Plug>MarkdownPreview
+nmap <C-s> <Plug>MarkdownPreviewStop
