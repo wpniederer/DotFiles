@@ -897,7 +897,7 @@ require('lazy').setup({
         styles = {
           comments = { italic = false }, -- Disable italics in comments
         },
-        contrast = 'soft',
+        contrast = '',
         palette_overrides = {
           bright_red = '#e75740',
         },
@@ -977,6 +977,17 @@ require('lazy').setup({
   },
 
   { 'mrcjkb/nvim-lastplace' }, -- Remember last cursor position
+
+  -- For Markdown Previews
+  {
+    'iamcco/markdown-preview.nvim',
+    cmd = { 'MarkdownPreviewToggle', 'MarkdownPreview', 'MarkdownPreviewStop' },
+    build = 'cd app && yarn install',
+    init = function()
+      vim.g.mkdp_filetypes = { 'markdown' }
+    end,
+    ft = { 'markdown' },
+  },
 
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
