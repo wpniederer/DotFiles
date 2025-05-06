@@ -1,0 +1,13 @@
+# Node
+npm-debug.log
+
+# Mac
+.DS_Store
+
+# vi
+*~
+*.swp
+
+# General
+log/
+*.log

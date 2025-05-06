@@ -1,0 +1,15 @@
+[user]
+	email = wpniederer@gmail.com
+	name = wpniederer
+[core]
+	editor = vim
+	excludesfile = /Users/wniederer/.gitignore
+[pull]
+	rebase = false
+[push]
+	autoSetupRemote = true
+[pack]
+	windowMemory = 100m
+	packSizeLimit = 100m
+	threads = 1
+	deltaCacheSize = 512m
